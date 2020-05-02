@@ -4,10 +4,20 @@ function carregar() {
   let data = new Date();
   let hora = data.getHours();
 
-  hora = 6;
+  //hora para teste.
+  //hora = 19;
+
   if (hora > 2 && hora < 12) {
     //Dia
-    msg.innerHTML = `Bom dia! Agora são <strong>${hora}</strong> horas`;
+    msg.innerHTML = `Bom dia! Agora são <strong>${hora}</strong> horas.`;
     img.src = "./img/fotoManha.png";
+  } else if (hora >= 12 && hora < 18) {
+    //Tarde
+    msg.innerHTML = `Boa Tarde! Agora são <strong>${hora}</strong> horas.`;
+    img.src = "./img/fotoTarde.png";
+  } else {
+    //Noite
+    msg.innerHTML = `Boa noite! Agora são <strong>${hora}</strong> horas.`;
+    img.src = "./img/fotoNoite.png";
   }
 }
