@@ -1,2 +1,3 @@
 # hora-do-dia
- exercicio para treino em JS
+
+exercicio desenvolvido por Gustavo Guanabara, usado por mim para treino em JS
